@@ -1,0 +1,165 @@
+@font-face {
+    font-family: GODOFWAR;
+    src: url(GODOFWAR.TTF);
+  }
+
+  @font-face {
+    font-family: Fabrik;
+    src: url(fabrik.ttf);
+  }
+
+
+  .background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.3; 
+    background-image: url('/Assets/tarot.png'); 
+    background-size: cover; 
+}
+
+body {
+    background-color: #0D1229;
+    font-family: Fabrik;
+    letter-spacing: 1px;
+    margin: 5vh 5vw;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: GODOFWAR;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul {
+    padding-inline-start: 0;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.menu li a:hover {
+    background-color: #333;
+}
+
+.container {
+    margin: auto;
+}
+
+#gif {
+    max-width: 100%; 
+    height: auto; 
+    object-fit: cover;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.Features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(50% - 40px);
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 5px rgba(45, 33, 79, 0.379), 0 0 20px 10px rgba(255, 255, 255, 0.5), 0 0 30px 15px rgba(255, 255, 255, 0.3);
+}
+
+.feature img {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.feature video {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+.registro {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.registro button {
+    background-color: #191622;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.registro button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.registro button:hover {
+    background-color: #2d2546;
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .menu li a {
+        padding: 8px 16px;
+    }
+}
